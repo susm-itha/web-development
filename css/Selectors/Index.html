@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <style>
+ body {
+            background-color: #d3d3d3; 
+            font-family: 'Times New Roman', serif;
+            padding: 20px;
+            line-height: 1.4;
+        }
+
+      
+        .header-text {
+            color: #a52a2a; 
+            font-weight: bold;
+            background-color: #fffaf0; 
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+      
+        .mid-text {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+       
+        .right-text {
+            text-align: right;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        
+        .btn-list {
+            display: flex;
+            flex-direction: column; 
+        }
+
+        .btn-list button {
+            width: fit-content;
+            border: 1px solid #000;
+            padding: 2px 8px;
+            font-size: 13px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+   
+        .btn-list button:nth-child(odd) {
+            background-color: #8da3a7;
+            color: #ffffff;
+        }
+
+      
+        .btn-list button:nth-child(even) {
+            background-color: #cd5c5c; 
+            color: hsl(186, 33%, 94%);
+        }
+
+        
+        .btn-list button:nth-child(3) {
+            background-color: #8da3a7; 
+            color: #fdfafa;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed consectetur fuga, nobis reiciendis optio alias quisquam dolore aspernatur illum vitae.
+    </div>
+
+    <div class="mid-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quidem incidunt doloribus repellendus dicta! Nobis animi dolore voluptates ullam id pariatur cum repellendus vero libero recusandae necessitatibus, delectus architecto aperiam.
+    </div>
+
+    <div class="right-text">
+        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Pariatur Quidem Incidunt Doloribus Repellendus Dicta! Nobis Animi Dolore Voluptates Ullam Id<br>
+        Pariatur Cum Repellendus Vero Libero Recusandae Necessitatibus, Delectus Architecto Aperiam.
+    </div>
+
+    <div class="btn-list">
+        <button>Next</button>
+        <button>Previous</button>
+        <button>Next one</button>
+        <button>Previous</button>
+        <button>Next</button>
+        <button>Previous</button>
+        <button>Next</button>
+        <button>Previous</button>
+    </div>
+   </style> 
+</body>
+</html>

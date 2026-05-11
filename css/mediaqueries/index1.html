@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+<body>
+   <style>
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+       
+        body {
+            background-color: #cbd5c0;
+            padding: 20px;
+           
+        }
+
+        
+        .container {
+            display: grid;
+           
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 10px;
+            width: 100%;
+            max-width: 900px; 
+            border: 2px solid #000;
+            padding: 15px;
+            background-color: transparent;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border: 1px solid #333;
+            height: 70px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        
+        .header {
+            grid-column: span 4;
+            background-color: #755623; 
+        }
+
+        
+        .f1 { background-color: #55882c; } 
+        .f2 { background-color: #924c69; } 
+        .f3 { background-color: #996947; } 
+        .f4 { background-color: #2f5363; } 
+        
+        .content {
+            grid-column: span 4;
+            background-color: #797c92;
+        }
+      
+        .signup {
+            grid-column: span 4;
+            background-color: #ae83d8; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="box header">HEADER</div>
+        
+        <div class="box f1">FEATURE</div>
+        <div class="box f2">FEATURE</div>
+        <div class="box f3">FEATURE</div>
+        <div class="box f4">FEATURE</div>
+
+        <div class="box content">CONTENT</div>
+
+        <div class="box signup">SIGN UP</div>
+
+    </div>
+</body>
+</html>

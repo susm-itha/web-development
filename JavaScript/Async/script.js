@@ -27,3 +27,40 @@ let a = setInterval(()=>{
 
 //clearInterval
 clearInterval(a)
+
+//Throtting Event
+function throttle(fn, limit) {
+  let lastTime = 0;
+
+  return function () {
+    const now = Date.now();
+    if (now - lastTime >= limit) {
+      fn();
+      lastTime = now;
+    }
+  };
+}
+
+window.addEventListener("scroll", throttle(() => {
+  console.log("Throttled Scroll");
+}, 500));
+
+
+//Debouncing
+function debounce(callback, delay) {
+  let timeoutId;
+
+  return function (...args) {
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(() => {
+      callback.apply(this, args);
+    }, delay);
+  };
+}
+
+const input = document.getElementById("search");
+
+input.addEventListener("keyup", debounce(() => {
+  console.log("hello");
+}, 500));

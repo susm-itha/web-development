@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layouts</title>
+</head>
+<body>
+    <style>
+    body {
+            background-color: #e0f2f1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            padding: 20px;
+            gap: 10px; 
+        }
+
+        .wrapper {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .box {
+            border: 1px solid #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 14px; 
+        }
+
+        .logo { height: 40px; background-color: #9d8fbe; }
+
+       
+        .nav-banner-row {
+            display: flex;
+            gap: 10px;
+            height: 60px; 
+        }
+
+        .nav { 
+            flex: 1; 
+            background-color: #79bea7; 
+            justify-content: flex-start; 
+            padding-left: 10px;
+        }
+
+        .header { 
+            flex: 2; 
+            background-color: #647781; 
+            justify-content: flex-end; 
+            padding-right: 10px;
+            color: white;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 10px;
+            height: 150px; 
+        }
+
+        .sidebar { flex: 1; background-color: #3b2626; color: white; }
+        .body-area { flex: 2.5; background-color: #cf9494; }
+
+        .small-boxes {
+            height: 70px; 
+            flex-direction: column;
+            background-color: #85ccab;
+            gap: 2px;
+        }
+
+        .susmitha { 
+            height: 40px; 
+            background-color: #507486; 
+            color: white; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="box logo">Logo</div>
+        
+        <div class="nav-banner-row">
+            <div class="box nav">Navigation</div>
+            <div class="box header">Header / Banner</div>
+        </div>
+
+        <div class="main-content">
+            <div class="box body-area">Body Area</div>
+            <div class="box sidebar">Side Bar</div>
+        </div>
+
+        <div class="box small-boxes">
+            <div>row 1</div>
+            <div>row 2</div>
+            <div>row 3</div>
+        </div>
+
+        <div class="box susmitha">susmitha</div>
+    </div>
+</body>
+</html>

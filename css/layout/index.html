@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+     body {
+            margin: 40px;
+            font-family: 'romans', Times, serif;
+        }
+
+        
+        .top-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .border-box {
+            border: 1px solid black;
+            width: 35px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 170px;
+        }
+
+        .box-four {
+            background-color: #7b93d4; 
+            width: 30px;
+            height: 40px;
+            font-size: 12px;
+            margin-right: 170px;
+        }
+
+        .text-five {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+       
+        .mid-group {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 350px;
+            margin-bottom: 30px;
+        }
+
+        .tight-box {
+            border: 1px solid black;
+            width: 35px;
+            height: 70px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .red-container {
+            background-color: rgb(200, 255, 0);
+            border: 2px solid #080808; 
+            width: 100%;
+            height: 120px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mini-item {
+            border: 1px solid black;
+            width: 70px;
+            height: 18px;
+            font-size: 11px;
+            margin-bottom: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            padding-left: 2px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="top-row">
+        <div class="border-box">one</div>
+        <div class="border-box">Two</div>
+        <div class="border-box">Three</div>
+        <div class="box-four">Four</div>
+        <div class="text-five">Five</div>
+    </div>
+
+    <div class="mid-group">
+        <div class="tight-box">one</div>
+        <div class="tight-box">Two</div>
+        <div class="tight-box">Three</div>
+        <div class="box-four" style="margin-right: 10px;">Four</div>
+        <div class="text-five">Five</div>
+    </div>
+
+    <div class="red-container">
+        <div class="mini-item">one</div>
+        <div class="mini-item">Two</div>
+        <div class="mini-item">Three</div>
+        
+        <div class="mini-item">one</div>
+        <div class="mini-item">Two</div>
+        <div class="mini-item">Three</div>
+    </div>
+  
+</body>
+</html>
